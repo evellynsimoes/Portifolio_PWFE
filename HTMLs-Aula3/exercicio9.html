@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="icon" href="../imagens/favicon.png">
+    <link rel="stylesheet" href="../css/cards.css">
+</head>
+<body>
+    <main>
+        <script src="./exercicios.js"></script>
+        <div class="estrelas"></div>
+        <div class="estrelas-piscando"></div>
+
+        <div class="titulo"><h1>Aula 3</h1></div>
+        <div class="explicacao"><h2>Preencha o formulario</h2></div>
+        <div class="card">
+            <div class="card-form">
+                <h2>Exercício 9</h2>
+                <div class="pergunta-form-1">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" placeholder="Digite aqui">
+                </div>
+                <div class="pergunta-form-2">
+                    <label for="endereco">Endereço:</label>
+                    <input id="endereco" placeholder="Digite aqui" required>
+                </div>
+                <div class="pergunta-form-3">
+                    <label for="sexo">Sexo:<br> 
+                        <input type="radio" name="sexo" id="sexoFeminino" value="Feminino" required>Feminino
+                        <input type="radio" name="sexo" id="sexoMasculino" value="Masculino" required>Masculino
+                    </label>
+                    
+                </div>
+                <div class="pergunta-form-4">
+                    <label for="telefone">Telefone: </label>
+                    <input id="telefone" placeholder="Digite aqui" required>
+                </div>
+                <div class="pergunta-form-5">
+                    <label for="celular">Celular: </label>
+                    <input id="celular" placeholder="Digite aqui" required>
+                </div>
+                <div class="pergunta-form-6">
+                    <label for="email">Email: </label>
+                    <input id="email" placeholder="Digite aqui" required>
+                </div>
+
+                <div class="botao">
+                <button onclick="Forms()">Calcular</button>
+                </div>
+                <div class="resultado" id="resultado"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
