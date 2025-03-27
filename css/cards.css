@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fustat:wght@200..800&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+}
+
+
+.estrelas{
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    box-shadow:  50px 80px white, 120px 200px white, 300px 100px white, 
+    400px 250px white, 500px 60px white, 600px 180px white, 
+    700px 300px white, 800px 220px white, 900px 50px white, 
+    1000px 400px white, 150px 600px white, 250px 450px white,
+    50px 700px white, 80px 900px white, 600px 700px white, 
+    750px 850px white, 950px 950px white, 1100px 100px white, 
+    1200px 200px white, 1300px 400px white, 1400px 300px white, 
+    1550px 500px white, 1600px 700px white, 1700px 200px white, 
+    1800px 600px white, 1900px 400px white, 2000px 250px white,
+    2100px 100px white, 2200px 50px white, 2300px 600px white, 
+    2400px 200px white, 2500px 500px white, 2600px 700px white, 
+    2700px 800px white, 2800px 400px white, 2900px 350px white, 
+    3000px 100px white, 3100px 900px white, 3200px 600px white,
+    3300px 700px white, 3400px 800px white, 3500px 100px white,
+    3600px 250px white, 3700px 600px white, 3800px 100px white,
+    3900px 700px white, 4000px 800px white, 4100px 300px white,
+    4200px 200px white, 4300px 400px white, 4400px 150px white,
+    4500px 350px white, 4600px 50px white, 4700px 500px white;
+
+    animation: piscar 1.8s infinite alternate ease-in-out;
+}
+
+.estrelas::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 20px 150px white, 100px 50px white, 350px 90px white,
+    450px 270px white, 550px 30px white, 650px 160px white,
+    750px 500px white, 850px 300px white, 950px 800px white,
+    1050px 400px white, 1150px 600px white, 1250px 200px white,
+    1350px 900px white, 1450px 700px white, 1550px 100px white,
+    1650px 250px white, 1750px 650px white, 1850px 700px white,
+    1950px 300px white, 2050px 50px white, 2150px 400px white,
+    2250px 700px white, 2350px 600px white, 2450px 100px white;
+}
+
+@keyframes piscar{
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0.3;}
+}
+
+.estrelas-piscando{
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    box-shadow: 30px 60px white, 200px 300px white, 400px 90px white,
+    600px 200px white, 750px 150px white;
+    animation: piscar 1.8s infinite alternate ease-in-out;
+}
+
+.titulo h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 30px;
+    color: white;
+}
+
+.explicacao h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 1%;
+}
+
+.card{
+    display: flex;
+    justify-content: center; 
+    height: 100vh; 
+    margin-top: 5%;
+}
+
+.card-mercurio{
+    background-color: white;
+    width: 500px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 35px rgb(0, 234, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-calculadora{
+    background-color: white;
+    width: 550px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 35px rgb(0, 234, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-calculadora h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.card-mercurio h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 6%;
+}
+
+.pergunta1{
+    display: grid;
+    padding: 30px 0px 30px 30px;
+    gap: 15px;
+}
+
+.pergunta1 input{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.pergunta1 label{
+    font-size: 20px;
+}
+
+.pergunta-calc-1{
+    display: grid;
+    padding: 30px 0px 5px 30px;
+    gap: 15px;
+}
+
+.pergunta-calc-1 input{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.pergunta-calc-1 label{
+    font-size: 20px;
+}
+
+.pergunta2{
+    display: grid;
+    padding: 30px 0px 30px 30px;
+    gap: 15px;
+}
+
+.pergunta2 input{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.pergunta2 label{
+    font-size: 20px;
+}
+
+.pergunta-calc-2{
+    display: grid;
+    padding: 30px 0px 5px 30px;
+    gap: 15px;
+}
+
+.pergunta-calc-2 input{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.pergunta-calc-2 label{
+    font-size: 20px;
+}
+
+.pergunta-calc-3{
+    display: grid;
+    padding: 30px 0px 5px 30px;
+    gap: 15px;
+}
+
+.pergunta-calc-3 input{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.pergunta-calc-3 label{
+    font-size: 20px;
+}
+
+.botao{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-mercurio button{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 154, 175);
+    border-radius: 6px;
+
+}
+
+.card-mercurio button:hover{
+    background-color: rgb(92, 119, 135);
+    transition: 0.2s ease-in-out;
+}
+
+.card-calculadora button{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 154, 175);
+    border-radius: 6px;
+}
+
+.card-calculadora button:hover{
+    background-color: rgb(92, 119, 135);
+    transition: 0.2s ease-in-out;
+}
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 30px;
+}

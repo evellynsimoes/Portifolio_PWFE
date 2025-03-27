@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="icon" href="../imagens/favicon.png">
+    <link rel="stylesheet" href="../css/cards.css">
+</head>
+<body>
+    <main>
+        <script src="./exercicios.js"></script>
+        <div class="estrelas"></div>
+        <div class="estrelas-piscando"></div>
+
+        <div class="titulo"><h1>Aula 3</h1></div>
+        <div class="explicacao"><h2>Vamos calcular em uma calculadora</h2></div>
+        <div class="card">
+            <div class="card-calculadora">
+                <h2>Exercício 1</h2>
+                <div class="pergunta-calc-1">
+                    <label for="escolha">Escolha uma opção:<br>1-soma<br>2-subtração<br>3-multiplicação<br>4-divisão: </label>
+                    <input type="number" id="escolha" placeholder="Digite aqui">
+                </div>
+                <div class="pergunta-calc-2">
+                    <label for="a">Digite um número: </label>
+                    <input type="number" id="a" placeholder="Digite aqui">
+                </div>
+                <div class="pergunta-calc-3">
+                    <label for="b">Digite um número: </label>
+                    <input type="number" id="b" placeholder="Digite aqui">
+                </div>
+
+                <div class="botao">
+                <button onclick="calculadora()">Calcular</button>
+                </div>
+                <div class="resultado" id="resultado"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

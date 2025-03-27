@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fustat:wght@200..800&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagens/fundo-inicio.avif);
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden; 
+}
+
+body.animating {
+    overflow: hidden; /* Mantém o overflow hidden durante a animação */
+}
+
+.apresentacao h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black;
+}
+
+.apresentacao h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black;
+}
+
+.foguete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.foguete img{
+    width: 200px;
+    transform: rotate(60deg);
+    height: auto;
+    animation: flutuar 2s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.foguete.voando {
+    transform: translateX(100vw) rotate(90deg);
+    opacity: 0;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: rotate(60deg) translateY(0);
+    }
+    50% {
+        transform: rotate(60deg) translateY(-20px);
+    }
+    100% {
+        transform: rotate(60deg) translateY(0);
+    }
+}

@@ -1,0 +1,233 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+}
+
+.estrela-cadente{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('animacao.gif');
+    background-size: cover;
+    width: 2000px;
+    height: 60px;
+}
+
+.estrela-cadente img{
+    width: 600px;
+    height: 180px;
+    margin-top: 70px;
+    margin-right:30%;
+}
+
+.nave-espacial{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 10; /*faz com que a nave fique acima de outros elementos*/
+    transform: translateX(-50%);
+}
+
+.nave-espacial img{
+    width: 150px;
+    height: 150px;
+}
+
+.estrelas{
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    box-shadow:  50px 80px white, 120px 200px white, 300px 100px white, 
+    400px 250px white, 500px 60px white, 600px 180px white, 
+    700px 300px white, 800px 220px white, 900px 50px white, 
+    1000px 400px white, 150px 600px white, 250px 450px white,
+    50px 700px white, 80px 900px white, 600px 700px white, 
+    750px 850px white, 950px 950px white, 1100px 100px white, 
+    1200px 200px white, 1300px 400px white, 1400px 300px white, 
+    1550px 500px white, 1600px 700px white, 1700px 200px white, 
+    1800px 600px white, 1900px 400px white, 2000px 250px white,
+    2100px 100px white, 2200px 50px white, 2300px 600px white, 
+    2400px 200px white, 2500px 500px white, 2600px 700px white, 
+    2700px 800px white, 2800px 400px white, 2900px 350px white, 
+    3000px 100px white, 3100px 900px white, 3200px 600px white,
+    3300px 700px white, 3400px 800px white, 3500px 100px white,
+    3600px 250px white, 3700px 600px white, 3800px 100px white,
+    3900px 700px white, 4000px 800px white, 4100px 300px white,
+    4200px 200px white, 4300px 400px white, 4400px 150px white,
+    4500px 350px white, 4600px 50px white, 4700px 500px white;
+
+    animation: piscar 1.8s infinite alternate ease-in-out;
+}
+
+.estrelas::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 20px 150px white, 100px 50px white, 350px 90px white,
+    450px 270px white, 550px 30px white, 650px 160px white,
+    750px 500px white, 850px 300px white, 950px 800px white,
+    1050px 400px white, 1150px 600px white, 1250px 200px white,
+    1350px 900px white, 1450px 700px white, 1550px 100px white,
+    1650px 250px white, 1750px 650px white, 1850px 700px white,
+    1950px 300px white, 2050px 50px white, 2150px 400px white,
+    2250px 700px white, 2350px 600px white, 2450px 100px white;
+}
+
+@keyframes piscar{
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0.3;}
+}
+
+.estrelas-piscando{
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    box-shadow: 30px 60px white, 200px 300px white, 400px 90px white,
+    600px 200px white, 750px 150px white;
+    animation: piscar 1.8s infinite alternate ease-in-out;
+}
+
+
+.planetas{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    align-items: center;
+    position: relative;
+}
+
+.planeta{
+    position: relative;
+    margin: 0 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.planeta img{
+    width: 250px;
+    height: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
+.planeta .texto{
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.planeta:hover{
+    opacity: 0.7;
+}
+
+.planeta:hover .texto{
+    opacity: 1;
+    color: #fff;
+    text-shadow:  2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black;
+}
+
+.planeta img:hover{
+    transform: scale(1.1);
+}
+
+.sistema-solar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    padding-bottom: 20%;
+}
+
+.sol{
+    position: relative;
+    padding-top: 200px;
+}
+
+.sol img{
+    width: 400px;
+    height: 400px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sol .texto{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.sol:hover{
+    opacity: 0.7;
+}
+
+.sol:hover .texto{
+    opacity: 1;
+    color: #fff;
+    text-shadow:  2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black;
+}
+
+.sol img:hover{
+    transform: scale(1.1);
+}
+
+.mercurio img{
+    width: 150px;
+    height: 150px;
+}
+
+.venus img{
+    width: 180px;
+    height: 180px;
+}
+
+.terra img{
+    width: 250px;
+    height: 250px;
+}
+
+.marte img{
+    width: 260px;
+    height: 260px;
+}
+
+.jupiter img{
+    width: 420px;
+    height: 340px;
+}
+
+.saturno img{
+    width: 500px;
+    height: 280px;
+}
+
