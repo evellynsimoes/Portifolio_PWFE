@@ -146,16 +146,71 @@ const Imposto = () =>{
     if (faixa <= 2112){
         imposto = 0;
     }else if(faixa <=3282){
-        imposto = (faixa - 2112) * 0.075 - 158.40;
+        imposto = (faixa - 2112) * 0.075;
     }else if(faixa <= 4456){
-        imposto = (faixa - 3282) * 0.15 - 370.80 + 158.40;
+        imposto = (faixa - 3282) * 0.15 - (3282 - 2112) * 0.075;
     }else if(faixa <=5634){
-        imposto = (faixa - 4456) * 0.225 - 602 + 370.80 + 158.40;
+        imposto = (faixa - 4456) * 0.225 (4456 - 3282) * 0.15 + (3282 - 2112) * 0.075;
     }else{
-        imposto = (faixa - 5634) * 0.275 - 826 + 602 + 370.80 + 158.40;
+        imposto = (faixa - 5634) * 0.275 + (5634 - 4456) * 0.225 + (4456 - 3282) * 0.15 + (3282 - 2112) * 0.075;
     }
 
     document.getElementById("resultado").innerText = `O imposto é ${imposto}`
 }
+
+//execicio11-aula3
+const INSS = () =>{
+    const salario = document.getElementById("salario").value;
+    restante = 0;
+
+    if (salario <= 1302 ){
+        restante = salario * 0.075;
+        document.getElementById("resultado").innerText = `O valor do INSS é ${restante}`
+    }else if (salario > 1302 && salario < 2571.29){
+        conta = (salario - 1302) * 0.09;
+        restante = 97.65 + conta;
+        document.getElementById("resultado").innerText = `O valor do INSS é ${restante}`
+    }else if(salario > 2571.29 && salario < 3856.94){
+        conta = (salario - 2571.29) * 0.12
+        restante = 97.65 + 114.24 + conta
+        document.getElementById("resultado").innerText = `O valor do INSS é ${restante}`
+    }else if(salario > 3856.94 && salario < 7507.49){
+        conta = (salario - 3856.94) * 0.14
+        restante = 97.65 + 114.24 + 154.28 + conta
+        document.getElementById("resultado").innerText = `O valor do INSS é ${restante}`
+    }else{
+        conta = (salario - 7507.49) * 0.14
+        restante = 97.65 + 114.24 + 154.28 + 511.07 + conta
+        document.getElementById("resultado").innerText = `O valor do INSS é ${restante}`
+    }
+}
+
+//exercicio12-aula3
+const Juros = () =>{
+    let capital = parseFloat(document.getElementById("capital").value);
+    let taxa = parseFloat(document.getElementById("taxa").value) / 100;
+    let tempo = parseFloat(document.getElementById("tempo").value);
+
+    let montante = capital * Math.pow((1 + taxa), tempo);
+    let juros = montante - capital;
+
+    document.getElementById("resultado").innerText = `Juros de ${juros.toFixed(2)}`
+}
+    
+//exercicio13-aula3
+const Financiamento = () =>{
+    let financiamento = parseFloat(document.getElementById("financiamento").value);
+    let taxa = parseFloat(document.getElementById("taxa").value) / 100;
+    let numParcelas = parseFloat(document.getElementById("numParcelas").value)
+
+    let conta1 = (financiamento * taxa);
+    let conta2 = (1 - Math.pow(1 + taxa, -numParcelas));
+    let div = conta1 / conta2
+
+    console.log(conta1, conta2);
+    console.log(div);
     
 
+
+    document.getElementById("resultado").innerText = `O valor da parcela é ${div.toFixed(2)}`;
+}

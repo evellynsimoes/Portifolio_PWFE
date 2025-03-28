@@ -219,6 +219,22 @@ body{
     font-size: 20px;
 }
 
+.pergunta3{
+    display: grid;
+    padding: 30px 0px 30px 30px;
+    gap: 15px;
+}
+
+.pergunta3 input{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.pergunta3 label{
+    font-size: 20px;
+}
+
 .pergunta-calc-2{
     display: grid;
     padding: 30px 0px 5px 30px;

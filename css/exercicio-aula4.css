@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fustat:wght@200..800&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagens/fundo-mar.jpg);
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.titulo-aula3 h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.exercicio-Aula3 h3, a{
+    color: rgb(47, 0, 255);
+    text-decoration: none;
+}
+
+.exercicio-Aula3{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.exercicios-Aula3{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.separacao{
+    display:grid;
+    justify-content: center;
+    gap: 250px;
+    margin-top: 10%;
+}
+
+.exercicio-1{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-2{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-3{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-4{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-5{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-6{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-7{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-8{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-9{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-10{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-11{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-12{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-13{
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exercicio-1:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-2:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-3:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-4:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-5:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-6:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-7:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-8:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.exercicio-9:hover{
+    background-color:rgb(165, 242, 255);
+    transition: 0.2s ease-in-out;
+}

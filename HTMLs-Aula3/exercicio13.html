@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="icon" href="../imagens/favicon.png">
+    <link rel="stylesheet" href="../css/cards.css">
+</head>
+<body>
+    <main>
+        <script src="./exercicios.js"></script>
+        <div class="estrelas"></div>
+        <div class="estrelas-piscando"></div>
+
+        <div class="titulo"><h1>Aula 3</h1></div>
+        <div class="explicacao"><h2>Vamos calcular o Financiamento</h2></div>
+        <div class="card">
+            <div class="card-calculadora">
+                <h2>Exercício 13</h2>
+                <div class="pergunta1">
+                    <label for="financiamento">Digite um financiamento:</label>
+                    <input type="number" id="financiamento" placeholder="Digite aqui">
+                </div>
+                <div class="pergunta2">
+                    <label for="taxa">Digite uma taxa:</label>
+                    <input type="number" id="taxa" placeholder="Digite aqui">
+                </div>
+                <div class="pergunta3">
+                    <label for="numParcelas">Digite o número de parcelas:</label>
+                    <input type="number" id="numParcelas" placeholder="Digite aqui">
+                </div>
+
+                <div class="botao">
+                <button onclick="Financiamento()">Verificar</button>
+                </div>
+                <div class="resultado" id="resultado"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
